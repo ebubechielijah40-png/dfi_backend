@@ -1,0 +1,20 @@
+# Start opencode with a named session
+opencode run --title "Session Name Here"
+
+# Continue last session
+opencode run --continue
+
+# Continue specific session by ID
+opencode run -s <session-id>
+
+# Export session to JSON
+opencode export <session-id>
+
+# Export and sanitize (redact sensitive info)
+opencode export <session-id> --sanitize
+
+# List all sessions
+opencode session list
+
+# Delete a session
+opencode session delete <session-id>
